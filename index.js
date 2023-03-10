@@ -15,6 +15,5 @@ app.use(express.static('./estilos'));//configura los archivos estaticos
 //primera ruta:
 
 app.get('/', (req, res) =>{
-    res.send('Funciona todo');
-    res.render('index');
+        res.render('index');
 });
