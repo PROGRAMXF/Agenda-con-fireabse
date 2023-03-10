@@ -1,4 +1,5 @@
 import express from 'express'//express importado
+import { db } from './config/configuracion_firebase.js'
 
 const app = express(); //express inicializado
 
@@ -15,5 +16,6 @@ app.use(express.static('./estilos'));//configura los archivos estaticos
 //primera ruta:
 
 app.get('/', (req, res) =>{
+    console.log(db)
         res.render('index');
 });
